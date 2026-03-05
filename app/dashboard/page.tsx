@@ -50,6 +50,16 @@ export default function DashboardPage() {
             <span className="mr-3 text-xl">➕</span> Cadastrar Item
           </Link>
         </nav>
+        {/* RODAPÉ DA SIDEBAR: SAIR */}
+<div className="p-6 border-t border-gray-100 mt-auto">
+  <button 
+    onClick={() => router.push('/')} 
+    className="flex items-center w-full p-4 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-2xl transition-all font-bold group"
+  >
+    <span className="mr-3 text-xl group-hover:scale-110 transition">🚪</span> 
+    Sair / Trocar Usuário
+  </button>
+</div>
       </aside>
 
       <main className="flex-1 flex flex-col overflow-hidden">
